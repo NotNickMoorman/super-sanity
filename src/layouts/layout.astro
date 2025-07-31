@@ -1,0 +1,24 @@
+---
+import '../styles/global.css';
+---
+
+<html lang="en" class="bg-black text-white">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Astro Test Site</title>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <nav class="bg-teal-600 p-4">
+      <ul class="flex space-x-6">
+        <li><a href="/" class="hover:underline">Home</a></li>
+        <li><a href="/about" class="hover:underline">About</a></li>
+      </ul>
+    </nav>
+
+    <main class="flex-grow p-6 max-w-4xl mx-auto">
+      <slot />
+    </main>
+  </body>
+</html>
