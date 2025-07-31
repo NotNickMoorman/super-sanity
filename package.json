@@ -15,5 +15,8 @@
     "alpinejs": "^3.14.9",
     "astro": "^5.12.6",
     "tailwindcss": "^4.1.11"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2"
   }
 }
