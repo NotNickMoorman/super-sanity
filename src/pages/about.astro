@@ -1,9 +1,14 @@
 ---
-import Layout from '../layouts/layout.astro';
+import BaseLayout from '../layouts/baselayout.astro';
 import ToggleText from '../components/component.astro';
 ---
 
-<Layout>
-  <h1 class="text-3xl font-bold mb-4">About Page</h1>
+<BaseLayout>
+    <div x-data="{ showMessage: false }" class="w-full max-w-md mx-auto">
+    <h2 class="text-5xl font-extrabold mb-6 text-blue-800 text-center">Wow! Two Pages?!</h2>
+    <p class="text-lg text-gray-700 mb-8 text-center">
+      This page contains a toggle button referenced via component!
+    </p>
+  </div>
   <ToggleText />
-</Layout>
+</BaseLayout>
